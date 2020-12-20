@@ -1,113 +1,12 @@
 /*로그인 css*/
+
 * {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+body{
 
-.mytitle {
-
-    width: 300px;
-    height: auto;
-
-
-    text-align: center;
-
-    background-color: #F4F4F4;
-    background-size: cover;
-    background-position: center;
-
-    border-radius: 10px;
-
-    margin-left:30px;
-    padding: 10px 20px 10px 20px;
-
-
-}
-
-.title1 {
-    font-weight: 900;
-    color: #939597;
-}
-
-.title2 {
-
-    font-weight: 900;
-    color: #F8E00E;
-}
-
-.id_pw {
-
-    margin-left: 30px;
-    padding-top: 12px;
-    height : 117px;
-    width : 340px;
-
-}
-
-.id {
-    padding: 6px 0px 6px 10px;
-    border: solid 1px #dadada;
-    height: 35px;
-    width: 320px;
-}
-
-.id_area {
-    padding: 0px 3px 7px 5px;
-    height: 50px;
-}
-
-.pw {
-  padding: 6px 0px 6px 10px;
-  border: solid 1px #dadada;
-  height: 35px;
-  width: 320px;
-}
-
-.pw_area {
-  padding: 0px 3px 7px 5px;
-  height: 50px;
-}
-
-#btn-1 {
-
-    background-color:  #F8E00E;
-    width: 245px;
-    height: 55px;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 17px;
-    border-radius: 10px;
-    border-style: hidden;
-
-
-}
-
-#btn-2 {
-
-    width: 75px;
-    height: 55px;
-    border-radius: 10px;
-    border-style: hidden;
-    margin-left: 10px;
-}
-
-
-
-
-.login_home{
-
-  width:400px;
-  height : 70px;
-  justify-content: center;
-  display: flex;
-  padding: 0px 3px 10px 3px;
-
-}
-
-.loginform{
-
-  width: 400px;
-
+  margin: 0px;
 
 }
 
@@ -115,74 +14,244 @@
   display:grid;
   grid-template-columns: auto 400px auto;
   margin-top: 200px;
+}
+
+/*로그인 폼*/
+
+.login_form{
+  width: 100%;
+}
+
+/*로그인 제목 폼*/
+
+.login_title_form {
+    width: 100%;
+    height: 140px;
+    text-align: center;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    padding: 80px 0px 80px 0px;
+}
+
+.login_main_title_1 {
+    font-weight: 900;
+    color: #939597;
+    display:block;
+}
+
+.login_main_title_2 {
+    font-weight: 900;
+    color: #F8E00E;
+    display: block;
+}
+
+/*로그인 id_pw 폼*/
+
+.id_pw_form {
+
+    padding: 12px 0px 12px 0px;
+    height : 100px;
+    width : 400px;
+    margin-bottom: 10px;
+}
+
+/*로그인 id 영역*/
+
+.id_area {
+    padding: 0px 10px 0px 10px;
+    height: 50px;
+    width : 380px;
+    margin-bottom: 10px;
 
 }
 
+#id {
+    padding: 6px 10px 6px 10px;
+    border: solid 1px #dadada;
+    height: 35px;
+    width: 360px;
+
+}
+
+/*로그인 pw 영역*/
+
+.pw_area {
+  padding: 0px 10px 0px 10px;
+  height: 50px;
+  width : 380px;
+
+}
+
+#pw {
+  padding: 6px 10px 6px 10px;
+  border: solid 1px #dadada;
+  height: 35px;
+  width: 360px;
+}
+
+/*로그인 login & home btn */
+
+.login_home_form{
+
+  width:380px;
+  height : 70px;
+  justify-content: center;
+  display: flex;
+  padding: 0px 10px 0px 10px;
+}
+
+#login_btn {
+    background-color:  #F8E00E;
+    width: 290px;
+    height: 55px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    border-style: hidden;
+}
+
+#home_btn {
+    width: 85px;
+    height: 55px;
+    border-radius: 10px;
+    border-style: hidden;
+    margin-left: 5px;
+}
 
 @media(max-width:750px) {
 
 
+/*로그인 제목 폼*/
 
-  #grid {
+  .login_title_form {
 
-    grid-template-columns: auto 600px auto;
-
-
-  }
-
-  .mytitle {
-
-      width: 400px;
-      height: auto;
       background-color: #F8E00E;
-      margin-left:21px;
+
       }
 
-  .title1 {
-      font-weight: 900;
+/*로그인 제목*/
+
+  .login_main_title_1, .login_main_title_2 {
       color: white;
   }
 
-  .title2 {
-      font-weight: 900;
-      color: white;
-  }
 
-  .id {
-      padding: 6px 0px 6px 10px;
-      border: solid 1px #dadada;
-      height: 35px;
-      width: 400px;
-  }
+/*로그인 login & home btn*/
 
-  .pw {
-    padding: 6px 0px 6px 10px;
-    border: solid 1px #dadada;
-    height: 35px;
-    width: 400px;
-  }
-
-  .login_home{
-
-    width:400px;
-    margin-left: 38px;
-
-  }
-
-  #btn-1 {
-
+  #login_btn {
       background-color: #F4F4F4;
       width: 300px;
       color: #939597;
+  }
 
+}
+
+/*스마트폰에 적용 했을때*/
+@media only screen and (min-device-width : 280px) and (max-device-width : 1024px)
+{
+
+/*전체 */
+
+  #grid {
+    grid-template-columns: 0px auto 0px;
+    margin-top: 0px;
+  }
+
+/* 로그인 폼*/
+
+  .login_form{
+    width: 100%;
+    padding : 30px 0px 50px 0px;
+  }
+
+/* 로그인 제목 폼*/
+
+  .login_title_form {
+      width: 100%;
+      height : 180px;
+      padding: 50px 0px 50px 0px;
+
+  }
+
+  .login_main_title_1 {
+      margin: 0px 0px 30px 0px;
+      font-size: 60px;
+  }
+
+  .login_main_title_2 {
+
+    margin: 0px;
+    font-size: 50px;
+
+  }
+
+/* 로그인 id_pw 폼*/
+
+  .id_pw_form {
+
+      margin-bottom: 10px;
+      padding-top: 12px;
+      height : 160px;
+      width : 100%;
+
+  }
+
+  .id_area {
+
+      height: 60px;
+      margin-bottom: 30px;
+      width : 980px;
+  }
+
+  .pw_area {
+
+      height: 60px;
+      width : 980px;
+
+  }
+
+  #id {
+
+      height: 60px;
+      width: 965px;
+      font-size: 20px;
+
+  }
+
+  #pw {
+
+      height: 60px;
+      width: 965px;
+      font-size: 20px;
+
+  }
+
+/* 로그인 login&home btn 폼*/
+
+  .login_home_form{
+
+    width: 980px;
+    height : 80px;
+    padding: 0px 3px 10px 10px;
+    
+
+  }
+
+  #login_btn {
+
+      width: 90%;
+      height: 70px;
+      font-size: 30px;
 
 
   }
-  #btn-2 {
 
+  #home_btn {
 
+      width: 85px;
+      height: 70px;
 
   }
-
 
 }
