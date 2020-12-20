@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
   <div id="header_grid">
   <h1>
     <a href="index.html" id ="main_title-1"> dongle's</a>
@@ -40,7 +41,7 @@
     var target = document.querySelector('body');
     var target1 = document.querySelector('#night_day_btn')
     var target2 = document.querySelector('#login_btn')
-    var target3 = document.querySelector('#search_type-1')
+    var target3 = document.querySelector('#search_area')
 
     if(this.value === 'night'){
 
@@ -74,7 +75,7 @@
 
      >
 
-    <input type="text" / placeholder="Search" id='search_type-1'>
+    <input type="text" / placeholder="Search" id='search_area'>
 
     <a href="login.html">
        <input type ="button" id='login_btn' value = "Log-in">
@@ -85,23 +86,51 @@
   </div>
 
   <div id="grid">
-    <ol>
-      <li><a href="index.html"> profile </a></li>
-      <li><a href="project.html"> project </a></li>
-      <li><a href="activity.html"> activity </a></li>
-      <li><a href="vision.html"> vision </a></li>
 
-    </ol>
+    <div id="article-1">
 
-    <div id="article">
-      <h2>What is a Front-End Developer? </h2>
-      <p>
-        The front end of a website is the part that users interact with. Everything that you see when you’re navigating
-        around the Internet, from fonts and colors to dropdown menus and sliders, is a combo of HTML, CSS, and
-        JavaScript
-        being controlled by your computer’s browser.
-      </p>
     </div>
+
+    <div class="profile_section">
+<!--부 제목 section -->
+
+      <div class = "profile_sub_title_section">
+
+        <h2 class= "sub_title">Profile </h2> &nbsp; &nbsp;
+
+          <span class = "sub_title_explain">저에 대해서 담고 있습니다.</span>
+
+      </div>
+
+<!--img section -->
+
+    <div class="profile_img_section">
+
+      <img src="profile.jpg" class ="profile_img">
+
+    </div>
+
+    <div class= "profile_content_section">
+
+      <h3> name    </h3>
+      <h3> birth   </h3>
+      <h3> git-hub </h3>
+      <h3> university </h3>
+
+
+    </div>
+
+    <div class= "profile_content_detail">
+
+      <p> 김동현</p>
+      <p> 93.01.21</p>
+      <p><a href="https://github.com/aosjehdgus"> github.com/aosjehdgus</a></p>
+      <p> 2020.08 서경대학교 나노융합공학과 졸업</p>
+      <p> 학점 <3.7/4.5> </p>
+
+  </div>
+
+  <div id="article-2">
 
   </div>
 
