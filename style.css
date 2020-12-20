@@ -33,8 +33,7 @@
 
   #header_grid {
     display: grid;
-    grid-template-columns: 230px auto 400px;
-
+    grid-template-columns: 230px auto 600px;
     border-bottom: solid 1px #939597;
 
   }
@@ -75,7 +74,22 @@
 
     padding-top: 21px;
     padding-bottom: 27px;
-    width:400px;
+    width:600px;
+
+  }
+
+  #night_day_btn {
+
+
+    border-radius: 3px;
+    border : solid 1px #282C34;
+    padding: 5px 20px 5px 20px;
+    height: 37px;
+    font-size : 17px;
+    font-weight: 700;
+    background-color: #282C34;
+    color : white;
+
 
   }
 
@@ -189,6 +203,7 @@
     #search_type-1{
 
         width:300px;
+        margin : 10px 0px 10px 0px;
 
 
     }

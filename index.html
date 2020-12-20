@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> dongle's portfolio </title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+  rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -22,28 +23,66 @@
   <div class ="navi_bar">
 
     <ul>
-      
       <li><a href="index.html"> Profile </a></li>
       <li><a href="project.html"> Project </a></li>
       <li><a href="activity.html"> Activity </a></li>
       <li><a href="vision.html"> Vision </a></li>
-
     </ul>
 
   </div>
 
+
+
+
   <div class="search_form">
+
+    <input id = 'night_day_btn' type = "button" value="night" onclick="
+    var target = document.querySelector('body');
+    var target1 = document.querySelector('#night_day_btn')
+    var target2 = document.querySelector('#login_btn')
+    var target3 = document.querySelector('#search_type-1')
+
+    if(this.value === 'night'){
+
+      target.style.backgroundColor = '#282C34';
+      target.style.color = 'white';
+
+      target1.style.backgroundColor = 'white';
+      target1.style.color = '#282C34';
+      target2.style.color = '#282C34';
+
+      target3.style.backgroundColor  = '#282C34'
+      target3.style.color  = 'white'
+
+      this.value = 'day';
+      }
+    else {
+      target.style.backgroundColor = '#F4F4F4';
+      target.style.color = 'black';
+
+      target1.style.backgroundColor = '#282C34'
+      target1.style.color = 'white';
+
+      target2.style.color = 'white';
+
+      target3.style.backgroundColor  = 'white'
+      target3.style.color  = '#dadada'
+
+      this.value = 'night';
+     }"
+
+
+     >
 
     <input type="text" / placeholder="Search" id='search_type-1'>
 
-    <a href="login.html"> <button id='login_btn'> Log - in </button> </a>
+    <a href="login.html">
+       <input type ="button" id='login_btn' value = "Log-in">
+   </a>
 
   </div>
 
-
-
   </div>
-
 
   <div id="grid">
     <ol>
@@ -69,6 +108,7 @@
 
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
+
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
     (function () {
@@ -80,6 +120,7 @@
       s1.setAttribute('crossorigin', '*');
       s0.parentNode.insertBefore(s1, s0);
     })();
+
   </script>
   <!--End of Tawk.to Script-->
 
