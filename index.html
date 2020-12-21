@@ -10,6 +10,67 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
   rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+<script>
+
+function nightdayhandler(self){
+
+    var target = document.querySelector('body');
+    var target1 = document.querySelector('#night_day_btn')
+    var target2 = document.querySelector('#login_btn')
+    var target3 = document.querySelector('#search_area')
+
+    if(self.value === 'night'){
+
+      target.style.backgroundColor = '#282C34';
+      target.style.color = 'white';
+
+      target1.style.backgroundColor = 'white';
+      target1.style.color = '#282C34';
+      target2.style.color = '#282C34';
+
+      target3.style.backgroundColor  = '#282C34';
+      target3.style.color  = 'white';
+
+      self.value = 'day';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+
+         alist[i].style.color = 'powderblue';
+          alist[1].style.color = 'white';
+
+         i = i + 1;
+       }
+
+      }
+
+    else {
+      target.style.backgroundColor = '#F4F4F4';
+      target.style.color = 'black';
+
+      target1.style.backgroundColor = '#282C34'
+      target1.style.color = 'white';
+
+      target2.style.color = 'white';
+
+      target3.style.backgroundColor  = 'white';
+      target3.style.color  = '#dadada';
+
+      self.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+
+         alist[i].style.color = '#939597';
+         alist[1].style.color = '#F7E444';
+         i = i + 1;
+       }
+    }
+
+    }
+</script>
 
 </head>
 
@@ -33,47 +94,11 @@
   </div>
 
 
-
-
   <div class="search_form">
 
-    <input id = 'night_day_btn' type = "button" value="night" onclick="
-    var target = document.querySelector('body');
-    var target1 = document.querySelector('#night_day_btn')
-    var target2 = document.querySelector('#login_btn')
-    var target3 = document.querySelector('#search_area')
+    <input id = 'night_day_btn' type = "button" value="night"
 
-    if(this.value === 'night'){
-
-      target.style.backgroundColor = '#282C34';
-      target.style.color = 'white';
-
-      target1.style.backgroundColor = 'white';
-      target1.style.color = '#282C34';
-      target2.style.color = '#282C34';
-
-      target3.style.backgroundColor  = '#282C34'
-      target3.style.color  = 'white'
-
-      this.value = 'day';
-      }
-    else {
-      target.style.backgroundColor = '#F4F4F4';
-      target.style.color = 'black';
-
-      target1.style.backgroundColor = '#282C34'
-      target1.style.color = 'white';
-
-      target2.style.color = 'white';
-
-      target3.style.backgroundColor  = 'white'
-      target3.style.color  = '#dadada'
-
-      this.value = 'night';
-     }"
-
-
-     >
+      onclick="nightdayhandler(this);">
 
     <input type="text" / placeholder="Search" id='search_area'>
 

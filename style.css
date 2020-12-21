@@ -171,15 +171,15 @@
 
   .profile_img_section{
 
-    margin: 20px 20px 0px 0px;
+    margin: 20px 30px 0px 0px;
     float:left;
-    width:300px;
+    width:200px;
 
   }
 
   .profile_img_section img{
 
-    width:300px;
+    width:200px;
     border-radius: 20px;
 
   }
@@ -188,12 +188,14 @@
     padding-top:20px;
     margin-right: 70px;
     float:left;
+    display: block;
+
 
   }
 
   .profile_content_section h3{
 
-    font-size: 23px;
+    font-size: 20px;
     color: #505254;
     letter-spacing: 2px;
     margin-bottom: 50px;
@@ -208,8 +210,8 @@
 
   .profile_content_detail p{
 
-    margin: 23px 0px 57px 0px;
-    font-size: 19px;
+    margin: 23px 0px 50px 0px;
+    font-size: 18px;
     color: #939597;
 
   }
@@ -218,13 +220,7 @@
 
 
 
- @media(max-width:1262px){
-
-   .navi_bar li{
-     margin-bottom: 15px;
-   }
-
-  @media(max-width:900px){
+  @media(max-width:1291px){
 
     #header_grid {
       display: block;
@@ -247,25 +243,211 @@
       display: block;
       text-align:center;
       margin: 20px;
+
     }
 
-    #grid {
-      display: block;
+
+
+    #grid{
+
+      grid-template-columns: 0.5fr 7fr 0.5fr;
+      margin-top: 0px;
+
     }
 
     .search_form{
-        width:auto;
-        display: block;
+        width:100%;
+        display: inline-block;
         text-align: center;
-        padding: 21px 65px 27px 65px;
+        padding: 21px 0px 27px 65px;
     }
 
     #search_area{
-        width:300px;
+        width:360px;
         margin : 10px 0px 10px 0px;
     }
 
+    .profile_img_section{
+
+      margin: 20px 20px 0px 0px;
+      float:left;
+      width:200px;
+
+    }
+
+    .profile_img_section img{
+
+
+      border-radius: 20px;
+
+    }
+    .profile_content_section{
+
+      margin-right: 30px;
+
+    }
+
+    .profile_content_section h3{
+
+      font-size: 17px;
+      margin-bottom: 47px;
+
+
+    }
+    .profile_content_detail{
+
+
+      width:305px;
+
+    }
+
+    .profile_content_detail p{
+
+      margin: 23px 0px 45px 0px;
+      font-size: 17px;
+      color: #939597;
+
+    }
+
+
   }
+
+    @media(max-width:993px){
+
+      #grid{
+
+        grid-template-columns: 1fr 6fr 1fr;
+        margin-top: 0px;
+
+      }
+
+
+      .sub_title{
+
+        color: #505254;
+        font-weight: 900;
+        font-size: 23px;
+        display:inline;
+        letter-spacing: 0.1em;
+
+      }
+
+      .sub_title_explain{
+
+        color: #939597;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 12px;
+
+      }
+
+      .profile_img_section{
+
+        width :200px;
+        justify-content: center;
+        margin: 20px 0px 0px 0px;
+        padding: 0px 193px 0px 193px;
+
+
+
+      }
+
+      .profile_img_section img{
+
+
+        border-radius: 10px;
+
+      }
+
+
+    }
+
+      @media(max-width:849px){
+
+
+        .profile_content_section{
+
+          margin-right: 15px;
+
+        }
+
+        .profile_content_section h3{
+
+          font-size: 15px;
+          margin-bottom: 47px;
+
+
+        }
+        .profile_content_detail{
+
+          padding-top: 15px;
+          width:263px;
+
+        }
+
+        .profile_content_detail p{
+
+          margin: 23px 0px 47px 0px;
+          font-size: 14px;
+          color: #939597;
+
+        }
+
+
+
+      }
+
+    @media(max-width:760px){
+
+
+      .search_form{
+
+          width:100%;
+          padding: 21px 0px 27px 0px;
+      }
+
+      #night_day_btn {
+        width: 400px;
+      }
+
+      #login_btn {
+        width: 400px;
+      }
+
+      .profile_sub_title_section{
+
+        margin: 20px 0px 0px 0px ;
+        text-align: center;
+      }
+
+      .profile_section{
+
+        width:380px;
+        padding: 0px;
+
+        margin: 0px;
+
+      }
+
+      .profile_img_section{
+
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+        width:150px;
+        padding : 0px 115px 0px 115px;
+
+      }
+
+      .profile_content_section{
+
+        margin-right: 15px;
+        padding-left: 15px;
+      }
+
+
+
+    }
 
 
   /*스마트폰에 적용 했을때*/
@@ -279,23 +461,22 @@
     }
 
     #night_day_btn {
-      width: 340px;
+      width: 400px;
     }
     #login_btn {
-      width: 340px;
+      width: 400px;
     }
 
     #grid {
       margin-top: 175px;
       padding-left: 0px;
-      display: block;
-
+    
     }
 
     .profile_section{
 
       display: block;
-      width: 100%;
+      width: 400px;
       height: auto;
       padding: 10px 10px 10px 20px;
       border-radius: 10px;
@@ -303,6 +484,13 @@
 
 
     }
+
+    .profile_sub_title_section{
+
+      margin: 0px;
+      padding: 0px;
+    }
+
     .sub_title{
 
       color: #505254;
