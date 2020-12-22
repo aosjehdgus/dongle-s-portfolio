@@ -7,108 +7,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> dongle's portfolio </title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
-  rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-<script>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-function nightdayhandler(self){
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/color.js"></script>
+  <script src="js/navigation.js"></script>
 
-    var target = document.querySelector('body');
-    var target1 = document.querySelector('#night_day_btn')
-    var target2 = document.querySelector('#login_btn')
-    var target3 = document.querySelector('#search_area')
-
-    if(self.value === 'night'){
-
-      target.style.backgroundColor = '#282C34';
-      target.style.color = 'white';
-
-      target1.style.backgroundColor = 'white';
-      target1.style.color = '#282C34';
-      target2.style.color = '#282C34';
-
-      target3.style.backgroundColor  = '#282C34';
-      target3.style.color  = 'white';
-
-      self.value = 'day';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-
-         alist[i].style.color = 'powderblue';
-          alist[1].style.color = 'white';
-
-         i = i + 1;
-       }
-
-      }
-
-    else {
-      target.style.backgroundColor = '#F4F4F4';
-      target.style.color = 'black';
-
-      target1.style.backgroundColor = '#282C34'
-      target1.style.color = 'white';
-
-      target2.style.color = 'white';
-
-      target3.style.backgroundColor  = 'white';
-      target3.style.color  = '#dadada';
-
-      self.value = 'night';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-
-         alist[i].style.color = '#939597';
-         alist[1].style.color = '#F7E444';
-         i = i + 1;
-       }
-    }
-
-    }
-</script>
 
 </head>
 
 <body>
 
-  <div id="header_grid">
-  <h1>
-    <a href="index.html" id ="main_title-1"> dongle's</a>
-    <a href="index.html" id ="main_title-2">portfolio </a>
-  </h1>
 
-  <div class ="navi_bar">
-
-    <ul>
-      <li><a href="index.html"> Profile </a></li>
-      <li><a href="project.html"> Project </a></li>
-      <li><a href="activity.html"> Activity </a></li>
-      <li><a href="vision.html"> Vision </a></li>
-    </ul>
-
-  </div>
+  <header>
 
 
-  <div class="search_form">
+    <nav id="top_navi">
 
-    <input id = 'night_day_btn' type = "button" value="night"
+      <h1 id="main_tit">
+        <a href="index.html" id="main_title-1"> dongle's</a>
+        <a href="index.html" id="main_title-2">portfolio </a>
+      </h1>
 
-      onclick="nightdayhandler(this);">
 
-    <input type="text" / placeholder="Search" id='search_area'>
+      <ul id="menu_list">
 
-    <a href="login.html">
-       <input type ="button" id='login_btn' value = "Log-in">
-   </a>
 
-  </div>
+        <li><a href="index.html"> Profile </a></li>
+        <li><a href="project.html"> Project </a></li>
+        <li><a href="activity.html"> Activity </a></li>
+        <li><a href="vision.html"> Vision </a></li>
 
-  </div>
+
+      </ul>
+
+
+      <input type="button" id="night_day_btn" value="night" onclick="nightdayhandler(this);">
+
+      <input type="text" / placeholder="Search" id='search_area'>
+
+
+      <a href="login.html">
+        <input type="button" id='login_btn' value="Log-in">
+      </a>
+
+    </nav>
+
+
+  </header>
+
+
 
   <div id="grid">
 
@@ -117,66 +67,54 @@ function nightdayhandler(self){
     </div>
 
     <div class="profile_section">
-<!--부 제목 section -->
+      <!--부 제목 section -->
 
-      <div class = "profile_sub_title_section">
+      <div class="profile_sub_title_section">
 
-        <h2 class= "sub_title">Profile </h2> &nbsp; &nbsp;
+        <h2 class="sub_title">Profile </h2> &nbsp; &nbsp;
 
-          <span class = "sub_title_explain">저에 대해서 담고 있습니다.</span>
+        <span class="sub_title_explain">저에 대해서 담고 있습니다.</span>
 
       </div>
 
-<!--img section -->
+      <!--img section -->
 
-    <div class="profile_img_section">
+      <div class="profile_img_section">
 
-      <img src="profile.jpg" class ="profile_img">
+        <img src="img/img1.jpg" class="profile_img">
 
-    </div>
+      </div>
 
-    <div class= "profile_content_section">
+      <div class="profile_content_section">
 
-      <h3> name    </h3>
-      <h3> birth   </h3>
-      <h3> git-hub </h3>
-      <h3> university </h3>
-
-
-    </div>
-
-    <div class= "profile_content_detail">
-
-      <p> 김동현</p>
-      <p> 93.01.21</p>
-      <p><a href="https://github.com/aosjehdgus"> github.com/aosjehdgus</a></p>
-      <p> 2020.08 서경대학교 나노융합공학과 졸업</p>
-      <p> 학점 <3.7/4.5> </p>
-
-  </div>
-
-  <div id="article-2">
-
-  </div>
+        <h3> name </h3>
+        <h3> birth </h3>
+        <h3> git-hub </h3>
+        <h3> university </h3>
 
 
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
+      </div>
 
-    var Tawk_API = Tawk_API || {},
-      Tawk_LoadStart = new Date();
-    (function () {
-      var s1 = document.createElement("script"),
-        s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/5fdc5215a8a254155ab47381/1epqa18v1';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
+      <div class="profile_content_detail">
 
-  </script>
-  <!--End of Tawk.to Script-->
+        <p> abc</p>
+        <p> abc</p>
+        <p><a href="https://github.com/aosjehdgus"> github.com/aosjehdgus</a></p>
+        <p> abc</p>
+        <p> abc </p>
+
+      </div>
+
+      <div id="article-2">
+
+      </div>
+
+
+
+
+      <!--Start of Tawk.to Script-->
+
+      <!--End of Tawk.to Script-->
 
 </body>
 

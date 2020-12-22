@@ -1,0 +1,655 @@
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+  background-color: #F4F4F4;
+  margin: 0px;
+}
+a{
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0px;
+  padding: 20px;
+}
+
+/* header section*/
+
+header {
+
+  height:80px;
+
+}
+
+h1{
+  margin: 0px;
+  padding: 20px;
+  display: inline-block;
+}
+
+
+#main_tit{
+
+  float: left;
+  padding: 15px 20px 20px 20px;
+
+}
+
+#main_title-1 {
+  color: #939597;
+  font-size: 25px;
+}
+
+#main_title-1:hover {
+  color: #F7E444;
+  transition: 0.3s;
+
+}
+
+
+
+#main_title-2 {
+  color: #F7E444;
+  font-size: 20px;
+}
+
+#main_title-2:hover {
+  color: #939597;
+  transition: 0.3s;
+
+}
+
+/*navigation bar section*/
+
+.nav_section{
+
+  width:100%x;
+  height:70px;
+
+  display: inline-block;
+
+}
+
+#top_navi{
+
+  height:65px;
+
+
+}
+
+.main_tit{
+
+  float:left;
+}
+
+#menu_list{
+
+  margin-top: 5px;
+  display: block;
+  float: left;
+  width: 600px;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  background: #f4f4f4;
+  padding: 5px 0;
+  overflow: hidden;
+  transition: 0.4s;
+  position: fixed;
+  z-index: 99
+  display:block;
+
+
+
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+    float: right;
+}
+
+nav ul li {
+  display: inline-block;
+
+
+}
+
+
+nav ul li a {
+  font-size: 20px;
+  display: inline-block;
+  padding: 15px;
+  color: #939597;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+
+
+
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .7s;
+}
+
+nav ul li a:hover {
+  color: #505254;
+
+}
+
+
+.nav_btn {
+
+  background-color: #f4f4f4;
+  border: none;
+  color: #505254;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+
+}
+
+/*search & toggle & login */
+
+
+
+#night_day_btn {
+  border-radius: 3px;
+  border: solid 1px #282C34;
+  padding: 5px 20px 5px 20px;
+  height: 37px;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #282C34;
+  color: white;
+  width: 100px;
+  margin: 15px 20px 0px 10px;
+
+  float: right;
+}
+
+#login_btn {
+  border-radius: 3px;
+  border: solid 1px #F7E444;
+  padding: 5px 20px 5px 20px;
+  height: 37px;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #F7E444;
+  color: white;
+  float: right;
+  margin: 15px 20px 0px 10px;
+}
+
+#search_area {
+  font-size: 17px;
+  border-radius: 3px;
+  border: solid 1px #dadada;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+  height: 25px;
+  width: 190px;
+  float: right;
+  margin: 15px 20px 0px 10px;
+}
+
+/*
+ min 은 ~부터는
+ max 는 ~까지는
+ */
+
+
+
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  padding: 0px 20px 0px 20px;
+  margin: 90px 15px 90px 15px;
+  height: 1200px;
+
+}
+
+/* 본문 시작 profile*/
+.profile_section {
+
+  padding: 25px 50px 25px 50px;
+  margin: 0px 20px 0px 20px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: white;
+
+
+}
+
+.profile_sub_title_section {}
+
+
+.sub_title {
+
+  color: #505254;
+  font-weight: 900;
+  font-size: 30px;
+  display: inline;
+  letter-spacing: 0.1em;
+
+}
+
+.sub_title_explain {
+
+  color: #939597;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+}
+
+
+.profile_img_section {
+
+  margin: 20px 30px 0px 0px;
+  float: left;
+  width: 200px;
+
+}
+
+.profile_img_section img {
+
+  width: 200px;
+  border-radius: 20px;
+
+}
+
+.profile_content_section {
+  padding-top: 20px;
+  margin-right: 70px;
+  float: left;
+  display: block;
+
+
+}
+
+.profile_content_section h3 {
+
+  font-size: 20px;
+  color: #505254;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+
+
+}
+
+.profile_content_detail {
+  padding-top: 20px;
+  float: left;
+
+}
+
+.profile_content_detail p {
+
+  margin: 23px 0px 50px 0px;
+  font-size: 18px;
+  color: #939597;
+
+}
+
+@media(max-width:1600px) {
+
+
+  #grid {
+    padding: 0px 20px 0px 20px;
+    margin: 90px 15px 90px 15px;
+    height: 500px;
+
+  }
+
+
+
+
+}
+
+
+@media(max-width:1291px) {
+
+
+
+
+  .nav_btn {
+
+    display: inline;
+  }
+
+
+  #grid {
+
+    grid-template-columns: 0.5fr 7fr 0.5fr;
+    margin-top: 0px;
+
+
+  }
+
+
+
+
+  #search_area {
+    width: 360px;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .profile_img_section {
+
+    margin: 20px 20px 0px 0px;
+    float: left;
+    width: 200px;
+
+  }
+
+  .profile_img_section img {
+
+
+    border-radius: 20px;
+
+  }
+
+  .profile_content_section {
+
+    margin-right: 30px;
+
+  }
+
+  .profile_content_section h3 {
+
+    font-size: 17px;
+    margin-bottom: 47px;
+
+
+  }
+
+  .profile_content_detail {
+
+
+    width: 305px;
+
+  }
+
+  .profile_content_detail p {
+
+    margin: 23px 0px 45px 0px;
+    font-size: 17px;
+    color: #939597;
+
+  }
+
+
+}
+
+@media(max-width:993px) {
+
+  #grid {
+
+    grid-template-columns: 1fr 6fr 1fr;
+    margin-top: 0px;
+
+  }
+
+
+  .sub_title {
+
+    color: #505254;
+    font-weight: 900;
+    font-size: 23px;
+    display: inline;
+    letter-spacing: 0.1em;
+
+  }
+
+  .sub_title_explain {
+
+    color: #939597;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+
+  }
+
+  .profile_img_section {
+
+    width: 200px;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 193px 0px 193px;
+
+
+
+  }
+
+  .profile_img_section img {
+
+
+    border-radius: 10px;
+
+  }
+
+
+}
+
+@media(max-width:849px) {
+
+
+  .profile_content_section {
+
+    margin-right: 15px;
+
+  }
+
+  .profile_content_section h3 {
+
+    font-size: 15px;
+    margin-bottom: 47px;
+
+
+  }
+
+  .profile_content_detail {
+
+    padding-top: 15px;
+    width: 263px;
+
+  }
+
+  .profile_content_detail p {
+
+    margin: 23px 0px 47px 0px;
+    font-size: 14px;
+    color: #939597;
+
+  }
+
+
+
+}
+
+@media(max-width:760px) {
+
+
+  .search_form {
+
+    width: 100%;
+    padding: 21px 0px 27px 0px;
+  }
+
+  #night_day_btn {
+    width: 400px;
+  }
+
+  #login_btn {
+    width: 400px;
+  }
+
+  .profile_sub_title_section {
+
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .profile_section {
+
+    width: 380px;
+    padding: 0px;
+
+    margin: 0px;
+
+  }
+
+  .profile_img_section {
+
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    padding: 0px 115px 0px 115px;
+
+  }
+
+  .profile_content_section {
+
+    margin-right: 15px;
+    padding-left: 15px;
+  }
+
+
+
+}
+
+
+/*스마트폰에 적용 했을때*/
+@media only screen and (min-device-width : 280px) and (max-device-width : 1024px) {
+
+  .search_form {
+
+    width: 100%;
+    padding: 21px 0px 27px 20px;
+  }
+
+  #night_day_btn {
+    width: 400px;
+  }
+
+  #login_btn {
+    width: 400px;
+  }
+
+  #grid {
+    margin-top: 175px;
+    padding-left: 0px;
+
+  }
+
+  .profile_section {
+
+    display: block;
+    width: 400px;
+    height: auto;
+    padding: 10px 10px 10px 20px;
+    border-radius: 10px;
+    margin-left: 0px;
+
+
+  }
+
+  .profile_sub_title_section {
+
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .sub_title {
+
+    color: #505254;
+    font-weight: 900;
+    font-size: 20px;
+    display: inline;
+    letter-spacing: 0.1em;
+
+  }
+
+  .sub_title_explain {
+
+    color: #939597;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+
+  }
+
+  .profile_img_section {
+
+    justify-content: center;
+    margin: 30px 20px 0px 0px;
+    padding-left: 75px;
+
+
+  }
+
+  .profile_img_section img {
+
+    width: 150px;
+    border-radius: 10px;
+
+  }
+
+  .profile_content_section {
+    padding-top: 10px;
+    margin-right: 30px;
+    width: 70px;
+
+
+  }
+
+  .profile_content_section h3 {
+
+    font-size: 13px;
+    color: #505254;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+
+
+
+  }
+
+  .profile_content_detail {
+    padding-top: 10px;
+    float: left;
+    display: inline-block;
+
+  }
+
+  .profile_content_detail p {
+
+    margin: 16px 0px 25px 0px;
+    font-size: 12px;
+    color: #939597;
+
+  }
+
+}
+
+
+}
