@@ -14,6 +14,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/color.js"></script>
   <script src="js/navigation.js"></script>
+  <script src="js/tab.js"></script>
 
 
 </head>
@@ -62,48 +63,65 @@
 
   <div id="grid">
 
-    <div id="article-1">
 
-    </div>
+      <div class = "tab">
+        <div class = "side_img_section">
+        <img src = "img/img1.jpg" id ="side_img">
+      </div>
+        <button class = "tablinks" onclick ="openTab(event, 'tab1')">
+        Introduce station
+        </button>
 
-    <div class="profile_section">
+        <button class = "tablinks" onclick ="openTab(event, 'tab2')">
+        Value station
+        </button>
+
+        <button class = "tablinks" onclick ="openTab(event, 'tab3')">
+        Skill station
+        </button>
+      </div>
+
+
+
       <!--부 제목 section -->
-
-      <div class="profile_sub_title_section">
-
-        <h2 class="sub_title">Profile </h2> &nbsp; &nbsp;
-
-        <span class="sub_title_explain">저에 대해서 담고 있습니다.</span>
-
-      </div>
-
-      <!--img section -->
-
-      <div class="profile_img_section">
-
-        <img src="img/img1.jpg" class="profile_img">
-
-      </div>
-
-      <div class="profile_content_section">
-
-        <h3> name </h3>
-        <h3> birth </h3>
-        <h3> git-hub </h3>
-        <h3> university </h3>
+        <div class = "tab_all">
 
 
-      </div>
+          <div id ="tab1" class = "tabcontent">
 
-      <div class="profile_content_detail">
+            <div class="profile_sub_title_section">
 
-        <p> abc</p>
-        <p> abc</p>
-        <p><a href="https://github.com/aosjehdgus"> github.com/aosjehdgus</a></p>
-        <p> abc</p>
-        <p> abc </p>
+                <h2 class="sub_title">Profile </h2> &nbsp; &nbsp;
 
-      </div>
+                <span class="sub_title_explain">저에 대해서 담고 있습니다.</span>
+
+            </div>
+
+              </div>
+
+
+          <div id ="tab2" class = "tabcontent">
+            <div class="profile_sub_title_section">
+
+                <h2 class="sub_title">Value </h2> &nbsp; &nbsp;
+
+                <span class="sub_title_explain">저에 대해서 담고 있습니다.</span>
+
+            </div>
+          </div>
+
+          <div id ="tab3" class = "tabcontent">
+            <div class="profile_sub_title_section">
+
+                <h2 class="sub_title">Skill </h2> &nbsp; &nbsp;
+
+                <span class="sub_title_explain">저에 대해서 담고 있습니다.</span>
+
+            </div>
+          </div>
+
+        </div>
+
 
       <div id="article-2">
 
