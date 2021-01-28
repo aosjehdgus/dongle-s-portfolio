@@ -56,15 +56,17 @@ var btn ={
 
 }
 
+var nav ={
+
+  NavGridSetBackgroundColor : function(color){
+    document.querySelector('.nav_grid').style.backgroundColor = color;
+  }
+
+}
+
 function nightdayhandler(self){
 
-    var target = document.querySelector('body');
-    var target1 = document.querySelector('#night_day_btn');
-    var target2 = document.querySelector('#login_btn');
-    var target3 = document.querySelector('#search_area');
-    var target4 = document.querySelector('nav');
-    var target5 = document.querySelector('#main_title-2');
-
+      
     if(self.value === 'night'){
 // nigth 모드 일때
       Body.SetBackgroundColor('#0D1117');
@@ -76,9 +78,11 @@ function nightdayhandler(self){
       btn.LogInSetColor('white');
       btn.LogInBorderSetColor('#004680');
 
-      target3.style.backgroundColor = "black";
-      target4.style.backgroundColor = "#161B22";
+      nav.NavGridSetBackgroundColor("#161B22");
 
+      
+
+      
       self.value = 'day';
 
       Links.SetColor('#F6F0FC')
@@ -97,16 +101,14 @@ function nightdayhandler(self){
       btn.LogInSetColor('white');
       btn.LogInBorderSetColor('#6587C6');
 
-      target3.style.backgroundColor  = 'white';
-      target4.style.backgroundColor = "#f4f4f4";
-      target5.style.color = "#6587C6";
+      nav.NavGridSetBackgroundColor('#f4f4f4');
 
 
 
       self.value = 'night';
 
-      Links.SetColor('#939597')
-      target5.style.color = "#6587C6";
+      Links.SetColor('#595959')
+      
 
     }
 
