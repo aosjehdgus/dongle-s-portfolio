@@ -6,6 +6,7 @@ body {
   background-color: #F2F2F2;
   margin: 0px;
 }
+
 a{
   text-decoration: none;
 }
@@ -23,119 +24,58 @@ ol {
   padding: 20px;
 }
 
-/* header section*/
-
-header {
-
-  height:80px;
-
-}
-
-h1{
-  margin: 0px;
-  padding: 20px;
-  display: inline-block;
-}
+header{
 
 
-#main_tit{
-
-  float: left;
-  padding: 15px 20px 20px 20px;
-
-}
-
-#main_title-1 {
-  color: #84898C;
-  font-size: 25px;
-}
-
-#main_title-1:hover {
-  color: #658DC6;
-  transition: 0.3s;
-
-}
-
-
-
-#main_title-2 {
-  color: #658DC6;
-  font-size: 20px;
-}
-
-#main_title-2:hover {
-  color: #939597;
-  transition: 0.3s;
-
-}
-
-/*navigation bar section*/
-
-.nav_section {
-
-  width:100%x;
-  height:70px;
-
-  display: inline-block;
-
-}
-
-#top_navi{
-
-  height:65px;
-
-
-}
-
-.main_tit{
-
-  float:left;
-}
-
-#menu_list{
-
-  margin-top: 5px;
-  display: block;
-  float: left;
-  width: 600px;
-}
-
-nav {
+  height: 70px;
   width: 100%;
-  height: 80px;
-  margin: 0 auto;
-  background: #f4f4f4;
-  padding: 5px 0;
-  overflow: hidden;
-  transition: 0.4s;
-  position: fixed;
-  z-index: 99
-  display:block;
+  
+  
 
+}
+
+/* nav_section */
+
+nav{
+
+  position: fixed;
+}
+
+
+nav.nav_grid{
+
+  
+  height: 40px;
+  width: 99%;
+  padding: 20px 10px 10px 10px;
+  overflow: hidden;
+  background-color: #F2F2F2;
+    
 }
 
 nav ul {
-  list-style: none;
-  text-align: center;
-  display: inline-block;
-    float: right;
+
+  display:grid;
+  grid-template-columns : 1fr repeat(6, fit-content(50px));
+  grid-gap: 30px;
+  
+  
 }
 
-nav ul li {
-  display: inline-block;
+nav ul li a#main-title{
 
+  color:#658DC6;
+  font-size: 24px;
 
 }
-
 
 nav ul li a {
-  font-size: 20px;
-  display: inline-block;
-  padding: 15px;
+  font-size: 23px;
+ 
   color: #939597;
   font-weight: 800;
-  text-transform: uppercase;
-  margin: 0 10px;
+  text-transform: capitalize;
+  
 
 }
 
@@ -150,62 +90,31 @@ nav ul li a:hover {
 
 }
 
-
-.nav_btn {
-
-  background-color: #f4f4f4;
-  border: none;
-  color: #505254;
-  padding: 12px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  display: none;
-
-}
-
 /*search & toggle & login */
-
-
 
 #night_day_btn {
   border-radius: 3px;
   border: solid 1px #282C34;
-  padding: 5px 20px 5px 20px;
-  height: 37px;
+  height: 32px;
   font-size: 17px;
   font-weight: 700;
   background-color: #282C34;
   color: white;
   width: 100px;
-  margin: 15px 20px 0px 10px;
-
-  float: right;
+  
 }
 
 #login_btn {
   border-radius: 3px;
   border: solid 1px #658DC6;
-  padding: 5px 20px 5px 20px;
-  height: 37px;
+  height: 32px;
   font-size: 17px;
   font-weight: 700;
   background-color: #658DC6;
   color: white;
-  float: right;
-  margin: 15px 20px 0px 10px;
+  width: 100px;
 }
 
-#search_area {
-  font-size: 17px;
-  border-radius: 3px;
-  border: solid 1px #dadada;
-  padding: 5px 20px 5px 20px;
-  text-align: center;
-  height: 25px;
-  width: 190px;
-  float: right;
-  margin: 15px 20px 0px 10px;
-}
 
 /*
  min 은 ~부터는
@@ -213,9 +122,7 @@ nav ul li a:hover {
  */
 
 
-
-
-#grid {
+.content_grid {
   display: grid;
 
   grid-template-columns: 230px auto 230px;
@@ -417,10 +324,7 @@ margin-top: 20px;
 
 
 
-  #search_area {
-    width: 360px;
-    margin: 10px 0px 10px 0px;
-  }
+
 
   .profile_img_section {
 
@@ -558,11 +462,6 @@ margin-top: 20px;
 @media(max-width:760px) {
 
 
-  .search_form {
-
-    width: 100%;
-    padding: 21px 0px 27px 0px;
-  }
 
   #night_day_btn {
     width: 400px;
@@ -611,11 +510,6 @@ margin-top: 20px;
 /*스마트폰에 적용 했을때*/
 @media only screen and (min-device-width : 280px) and (max-device-width : 1024px) {
 
-  .search_form {
-
-    width: 100%;
-    padding: 21px 0px 27px 20px;
-  }
 
   #night_day_btn {
     width: 400px;
