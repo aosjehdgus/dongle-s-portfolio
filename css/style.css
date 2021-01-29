@@ -81,11 +81,11 @@ nav ul li a {
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .7s;
+  transition: all .5s;
 }
 
 nav ul li a:hover {
-  color: #505254;
+  color: #9c9c9c;
 
 }
 
@@ -127,16 +127,18 @@ nav ul li a:hover {
   grid-template-columns: 230px auto 230px;
   padding: 0px 10px 0px 10px;
   margin: 20px 5px 90px 5px;
-  height: 1200px;
+  height: 800px;
 
 }
 
 /* 본문 시작 profile*/
 /* Style the tab */
 .tab {
-overflow: hidden;
 
-height:800px;
+  display: grid;
+  grid-template-rows : 2fr repeat(3, 1fr);
+  overflow: hidden;
+  height: 500px;
 
 
 
@@ -149,12 +151,12 @@ float: left;
 border: none;
 outline: none;
 cursor: pointer;
-padding: 20px 16px;
-margin-bottom: 25px;
+
 transition: 0.3s;
-font-size: 22px;
+font-size: 23px;
 font-weight: bold;
 color:#84898C;
+width: ;
 }
 
 
@@ -173,27 +175,19 @@ border-radius: 3px;
 }
 
 /* Style the tab content */
+
+
 .tabcontent {
 display: none;
 padding: 6px 12px;
-
 height : 800px;
-margin-top: 20px;
-}
-
-.side_img_section{
-
-
-  width:200px;
-  margin-bottom: 20px;
-
 
 }
+
 
 #side_img{
 
-  width:200px;
-  padding: 0 15px 0 15px;
+  width:230px;
   border-radius: 10%;
 
 }
@@ -283,6 +277,22 @@ margin-top: 20px;
   font-size: 18px;
   color: #939597;
 
+}
+
+
+.skill_article{
+
+  display: grid;
+  grid-template: 1fr 1fr / repeat(5, 1fr);
+  
+
+
+}
+
+.skill_logo{
+
+  width:60px;
+  height:60px;
 }
 
 @media(max-width:1600px) {
@@ -510,108 +520,7 @@ margin-top: 20px;
 @media only screen and (min-device-width : 280px) and (max-device-width : 1024px) {
 
 
-  #night_day_btn {
-    width: 400px;
-  }
-
-  #login_btn {
-    width: 400px;
-  }
-
-  #grid {
-    margin-top: 175px;
-    padding-left: 0px;
-
-  }
-
-  .profile_section {
-
-    display: block;
-    width: 400px;
-    height: auto;
-    padding: 10px 10px 10px 20px;
-    border-radius: 10px;
-    margin-left: 0px;
-  }
-
-
-
-  .profile_sub_title_section {
-
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .sub_title {
-
-    color: #505254;
-    font-weight: 900;
-    font-size: 20px;
-    display: inline;
-    letter-spacing: 0.1em;
-
-  }
-
-  .sub_title_explain {
-
-    color: #939597;
-    font-weight: 700;
-    letter-spacing: 2px;
-    font-size: 12px;
-
-  }
-
-  .profile_img_section {
-
-    justify-content: center;
-    margin: 30px 20px 0px 0px;
-    padding-left: 75px;
-
-
-  }
-
-  .profile_img_section img {
-
-    width: 150px;
-    border-radius: 10px;
-
-  }
-
-  .profile_content_section {
-    padding-top: 10px;
-    margin-right: 30px;
-    width: 70px;
-
-
-  }
-
-  .profile_content_section h3 {
-
-    font-size: 13px;
-    color: #505254;
-    letter-spacing: 2px;
-    margin-bottom: 25px;
-
-
-
-  }
-
-  .profile_content_detail {
-    padding-top: 10px;
-    float: left;
-    display: inline-block;
-
-  }
-
-  .profile_content_detail p {
-
-    margin: 16px 0px 25px 0px;
-    font-size: 12px;
-    color: #939597;
-
-  }
-
-}
+ 
 
 
 }
