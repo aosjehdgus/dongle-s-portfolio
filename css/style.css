@@ -279,11 +279,23 @@ height : 800px;
 
 }
 
+.skill_section{
+
+  background-color: rgba(255, 255, 255, 0.4);
+  
+  border:1px rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  
+}
 
 .skill_article{
 
   display: grid;
-  grid-template: 1fr 1fr / repeat(5, 1fr);
+  grid-template: repeat(5, 1fr) / 1fr 6fr;
+  place-items:center center;
+  row-gap:30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   
 
 
@@ -291,7 +303,7 @@ height : 800px;
 
 .skill_logo{
 
-  width:60px;
+  width:50px;
   height:60px;
 }
 
