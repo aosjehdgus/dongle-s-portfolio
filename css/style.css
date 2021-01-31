@@ -271,6 +271,38 @@ height : 800px;
 
 }
 
+.profile_article_section{
+
+  display: grid;
+  grid : repeat(6, 1fr) / 1fr 2fr;
+  background-color: rgba(255, 255, 255, 0.4);
+  border:1px rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  height: 500px;
+  align-items: center;
+
+}
+
+.profile_article_section h5{
+
+  font-size: 18px;
+  color: #595959;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+
+}
+
+.profile_article_section p{
+
+  font-size: 17px;
+  color: #6d6d6d;
+  font-weight: 500;
+  
+
+
+}
+
 .competency_article_section{
 
   display:grid;
@@ -280,7 +312,7 @@ height : 800px;
   background-color: rgba(255, 255, 255, 0.4);
   border:1px rgba(255, 255, 255, 0.4);
   border-radius: 5px;
-  height: 400px;
+  height: 500px;
 
 }
 
@@ -326,7 +358,7 @@ height : 800px;
   
   border:1px rgba(255, 255, 255, 0.4);
   border-radius: 5px;
-  height: 400px;
+  height: 500px;
   
 }
 
