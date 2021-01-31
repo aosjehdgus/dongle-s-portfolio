@@ -35,7 +35,6 @@
         <li><a href="index.html"> Profile </a></li>
         <li><a href="project.html"> Project </a></li>
         <li><a href="activity.html"> Activity </a></li>
-        <li><a href="vision.html"> Vision </a></li>
         <li><a href="login.html">
             <input type="button" id='login_btn' value="Log-in">
           </a>
@@ -66,11 +65,15 @@
       </button>
 
       <button class="tablinks" onclick="openTab(event, 'tab2')">
-        Value
+        Competency
       </button>
 
       <button class="tablinks" onclick="openTab(event, 'tab3')">
         Skill
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'tab4')">
+        Value
       </button>
     </section>
 
@@ -99,11 +102,60 @@
       <section id="tab2" class="tabcontent">
         <header class="profile_sub_title_section">
 
-          <h2 class="sub_title">Value </h2> &nbsp; &nbsp;
+          <h2 class="sub_title">Competency </h2> &nbsp; &nbsp;
 
-          <span class="sub_title_explain">저의 가치에 대해서 담고 있습니다.</span>
+          <span class="sub_title_explain">저의 역량에 대해서 담고 있습니다.</span>
 
         </header>
+
+        <article class="competency_article_section">
+          <section class="competency_img_section">
+            <img src="img/com.png">
+          </section>
+
+
+          <section class="competency_img_section">
+            <img src="img/admin.png">
+
+          </section>
+
+          <section class="competency_img_section">
+            <img src="img/study.png">
+
+          </section>
+
+
+          <section class="competency_content_section">
+
+            <h3>커뮤니케이션 능력</h3>
+
+            <p> 자신의 생각을 상대방이 <strong>이해할 수 있게</strong> <br> 설명할 수 있는 능력</p>
+
+          </section>
+
+          <section class="competency_content_section">
+
+            <h3>업무 및 사람 관리 능력</h3>
+
+            <p>업무를 <strong>할당하여</strong> <br>
+              사람을 관리 할 수 있는 능력
+            </p>
+
+
+          </section>
+          <section class="competency_content_section">
+
+            <h3>지속적인 학습 능력</h3>
+
+            <p><strong>개발 트랜드</strong>를 학습하고 <br>
+              공유 할 수 있는 능력
+
+            </p>
+
+          </section>
+
+
+        </article>
 
 
       </section>
@@ -118,9 +170,21 @@
         </header>
         <section class="skill_section">
 
-          <canvas id="myChart"></canvas>
+          <canvas id="myChart" width="1000px" height="400px"></canvas>
 
         </section>
+
+      </section>
+
+      <section id="tab4" class="tabcontent">
+        <header class="profile_sub_title_section">
+
+          <h2 class="sub_title">Value </h2> &nbsp; &nbsp;
+
+          <span class="sub_title_explain">저의 가치에 대해서 담고 있습니다.</span>
+
+        </header>
+
 
       </section>
 
