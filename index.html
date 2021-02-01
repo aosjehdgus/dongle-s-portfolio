@@ -18,23 +18,16 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
 
-
-
 </head>
 
 <body>
 
-
   <header>
-
 
     <nav class="nav_grid">
       <ul>
 
         <li><a href="index.html">dongle's portfolio</a></li>
-        <li><a href="index.html"> Profile </a></li>
-        <li><a href="project.html"> Project </a></li>
-        <li><a href="activity.html"> Activity </a></li>
         <li><a href="login.html">
             <input type="button" id='login_btn' value="Log-in">
           </a>
@@ -46,15 +39,9 @@
       </ul>
     </nav>
 
-
-
   </header>
 
-
-
-
   <section class="content_grid">
-
 
     <section class="tab">
       <section>
@@ -73,14 +60,21 @@
       </button>
 
       <button class="tablinks" onclick="openTab(event, 'tab4')">
+        Project
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'tab5')">
+        Activity
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'tab6')">
         Value
       </button>
     </section>
 
-
-
     <!--부 제목 section -->
     <section class="tab_all">
+
 
 
       <section id="tab1" class="tabcontent">
@@ -93,27 +87,44 @@
 
         </header>
 
+
+
         <article class="profile_article_section">
 
-          <h5>name</h5>
-          <p>김동현</p>
-          <h5>birth</h5>
-          <p>1993.01.21</p>
-          <h5>university</h5>
-          <p>2020.08 Graduated from Seokyeong University (3.7/4.5) </p>
-          <h5>git hub</h5>
-          <a href="https://github.com/aosjehdgus" target="_blank">
-            <p>github.com/aosjehdgus</p>
-          </a>
-          <h5>blog</h5>
-          <a href="https://aosjehdgus.tistory.com/" target="_blank">
-            <p>aosjehdgus.tstory.com</p>
-          </a>
-          <h5>instagram</h5>
-          <a href="https://www.instagram.com/dongle__study/" target="_blank">
-            <p>instagram.com/dongle_study</p>
-          </a>
+          <section class=profile_introduce_section>
 
+            <h3> 긍정적 재료로 소통하는 긍정 개발자 <br><br>
+              "안녕하세요. 저는 재료공학 출신 개발자 입니다."</h3>
+
+            <p> &nbsp 새로운 결과물을 만드는 3D 프린팅을 시작으로 무언가 만드는 것에 대해서 관심을 갖기 생기기 시작했습니다.
+              <br> <br>
+              &nbsp 오류가 발생했을 때 즉각적으로 해결할 수 있는 장점과 누군가와 협업하여 작업하는 환경의 매력에 매료되어 개발자의
+              길을 걷기로 결정했습니다.
+            </p>
+
+          </section>
+          <section class="profile_content_section">
+
+            <h5>name</h5>
+            <p>김동현</p>
+            <h5>birth</h5>
+            <p>1993.01.21</p>
+            <h5>university</h5>
+            <p>2020.08 Graduated from Seokyeong University(3.7/4.5) </p>
+            <h5>git hub</h5>
+            <a href="https://github.com/aosjehdgus" target="_blank">
+              <p>github.com/aosjehdgus</p>
+            </a>
+            <h5>blog</h5>
+            <a href="https://aosjehdgus.tistory.com/" target="_blank">
+              <p>aosjehdgus.tstory.com</p>
+            </a>
+            <h5>instagram</h5>
+            <a href="https://www.instagram.com/dongle__study/" target="_blank">
+              <p>instagram.com/dongle_study</p>
+            </a>
+
+          </section>
 
         </article>
 
@@ -200,21 +211,38 @@
       <section id="tab4" class="tabcontent">
         <header class="profile_sub_title_section">
 
-          <h2 class="sub_title">Value </h2> &nbsp; &nbsp;
+          <h2 class="sub_title">Project </h2> &nbsp; &nbsp;
 
-          <span class="sub_title_explain">저의 가치에 대해서 담고 있습니다.</span>
+          <span class="sub_title_explain">제가 진행한 프로젝트들을 담고 있습니다.</span>
 
         </header>
 
 
       </section>
 
+      <section id="tab5" class="tabcontent">
+        <header class="profile_sub_title_section">
 
-      <aside id="article-2">
+          <h2 class="sub_title">Activity </h2> &nbsp; &nbsp;
 
-      </aside>
+          <span class="sub_title_explain">제가 경험한 활동들을 담고 있습니다.</span>
+
+        </header>
 
 
+      </section>
+
+      <section id="tab6" class="tabcontent">
+        <header class="profile_sub_title_section">
+
+          <h2 class="sub_title">Value </h2> &nbsp; &nbsp;
+
+          <span class="sub_title_explain">저의 가치를 담고 있습니다.</span>
+
+        </header>
+
+
+      </section>
 
 
       <!--Start of chart.js Script-->
