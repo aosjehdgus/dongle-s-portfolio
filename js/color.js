@@ -101,7 +101,7 @@ function nightdayhandler(self){
       btn.LogInSetColor('white');
       btn.LogInBorderSetColor('#6587C6');
 
-      nav.NavGridSetBackgroundColor('#f4f4f4');
+      nav.NavGridSetBackgroundColor('#b5c7d3');
 
 
 
