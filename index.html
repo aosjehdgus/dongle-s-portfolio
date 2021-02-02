@@ -15,6 +15,7 @@
   <script src="js/color.js"></script>
   <script src="js/tab.js"></script>
 
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
 
@@ -246,70 +247,105 @@
 
         </header>
 
-        <article class="project_article_section">
-
-          <section class="project_img_section">
-
-            <button type="button" class="project_btn" onclick="window.open('https://github.com/aosjehdgus')">
-              <img src="img/react.png"></button>
-          </section>
-
-          <section class="project_img_section">
-
-            <button type="button" class="project_btn"
-              onclick="window.open('https://github.com/aosjehdgus/dongle-s-portfolio')"><img
-                src="img/dongle.PNG"></button>
-
-          </section>
 
 
-          <section class="project_img_section">
+        <div class="slider">
+          <!-- <div class="slide" style="background-image: url(./1.jpg);"></div>-->
+          <div class="slide">
 
-            <button class="project_btn" onclick="window.open('https://github.com/aosjehdgus/Mat.zip')"><img
-                src="img/mat.png"></button>
+            <div class="project_article_section">
+              <button type="button" class="project_btn" onclick="window.open('https://github.com/aosjehdgus')">
+                <img src="img/react.png"></button>
 
-          </section>
+              <section class="project_content_section">
 
-          <section class="project_content_section">
+                <h4>dongle의 포트폴리오 project</h4>
+                <p> 이 프로젝트에서는 제가 개발자를 시작하게 된 계기와 저의 역량을 확인할 수 있고 <br>
+                  사용하는 스킬과 프로젝트 경험, 다양한 활동을 확인할 수 있습니다. <br>
+                  또한 제가 가진 가치를 보여주는 포트폴리오 페이지 입니다.
 
-            <h4>진행 예정 프로젝트 제목</h4>
-            <p> 진행 예정임</p>
+                </p>
 
-          </section>
+                <p>
+                  1인 프로젝트로 진행하였습니다.
+                </p>
+              </section>
 
-
-
-          <section class="project_content_section">
-
-            <h4>dongle의 포트폴리오 project</h4>
-            <p> 제가 개발자를 시작하게 된 계기와 저의 역량 <br>
-              사용하는 스킬들, 프로젝트 경험, 활동들 <br>
-              제가 가진 가치들을 담은 포트폴리오 페이지 입니다.
-
-            </p>
-
-            <p>
-              1인 프로젝트로 진행하였습니다.
-            </p>
-          </section>
+            </div>
 
 
-          <section class="project_content_section">
-            <h4>맛.zip project</h4>
-            <p> 맛의 알집을 열어서 음식의 레시피, <br>식재료 관리 서비스를 제공하는 페이지 입니다.
+          </div>
 
-            </p>
+          <!--Second slide-->
 
-            <p>
-              한국품질재단 AI 개발자 과정에서 진행했던 <br> 4인 웹 개발 프로젝트로 첫번째 프로젝트 입니다.
-            </p>
+          <div class="slide">
 
-            <p>
-              프론트 엔드를 담당하여 진행하였습니다.
-            </p>
-          </section>
+            <div class="project_article_section">
+              <button type="button" class="project_btn"
+                onclick="window.open('https://github.com/aosjehdgus/dongle-s-portfolio')">
+                <img src="img/dongle.PNG"></button>
 
-        </article>
+              <section class="project_content_section">
+
+                <h4>dongle의 포트폴리오 project</h4>
+                <p> 이 프로젝트에서는 제가 개발자를 시작하게 된 계기와 저의 역량을 확인할 수 있고 <br>
+                  사용하는 스킬과 프로젝트 경험, 다양한 활동을 확인할 수 있습니다. <br>
+                  또한 제가 가진 가치를 보여주는 포트폴리오 페이지 입니다.
+
+                </p>
+
+                <p>
+                  1인 프로젝트로 진행하였습니다.
+                </p>
+              </section>
+
+            </div>
+
+
+          </div>
+
+          <!--Third slide-->
+
+          <div class="slide">
+
+            <div class="project_article_section">
+              <button type="button" class="project_btn" onclick="window.open('https://github.com/aosjehdgus/Mat.zip')">
+                <img src="img/mat.png"></button>
+
+              <section class="project_content_section">
+                <h4>맛.zip project</h4>
+                <p> 맛의 알집을 열어서 음식의 레시피와 식재료 관리 서비스를 제공하는 페이지 입니다.
+
+                </p>
+
+                <p>
+                  한국품질재단 AI 개발자 과정에서 진행했던 4인 웹 개발 프로젝트로 첫번째 프로젝트 입니다.
+                </p>
+
+                <p>
+                  프론트 엔드를 담당하여 진행하였습니다.
+                </p>
+              </section>
+
+            </div>
+
+
+          </div>
+
+
+
+
+
+
+          <a class="prev" onclick="button_click(-1)"> &#10094 </a>
+          <a class="next" onclick="button_click(1)"> &#10095 </a>
+
+        </div>
+
+        <script src="js/page.js"></script>
+
+
+
 
 
       </section>
@@ -325,9 +361,9 @@
 
         <article class="activity_article_section">
 
-               <section class="activity_img_section">
+          <section class="activity_img_section">
 
-           <h4 class="activity_title">정부 주관 머신러닝 <br>개발자 양성 과정 수료</h4>
+            <h4 class="activity_title">정부 주관 머신러닝 <br>개발자 양성 과정 수료</h4>
 
             <img src="img/certi.jpg">
 
@@ -342,13 +378,13 @@
 
           </section>
 
-   
+
 
 
           <section class="activity_img_section">
 
-           <h4 class="activity_title">개인 인스타 부계정 <br>
-           dongle_study 운영</h4>
+            <h4 class="activity_title">개인 인스타 부계정 <br>
+              dongle_study 운영</h4>
 
 
 
@@ -357,7 +393,7 @@
 
           </section>
 
-          
+
 
 
 
@@ -366,32 +402,32 @@
           <section class="activity_content_section">
 
             <p> 2020년 5월 부터 11월 까지 진행한 교육으로<br>
-                과학기술정보통신부, 정보통신기획평가원에서 <br>
-                주관하였고 프로젝트 기반으로 진행하였습니다.<br>
-                총 6개월 전체 과정을 수료하였습니다.                 
-          
+              과학기술정보통신부, 정보통신기획평가원에서 <br>
+              주관하였고 프로젝트 기반으로 진행하였습니다.<br>
+              총 6개월 전체 과정을 수료하였습니다.
+
             </p>
 
 
           </section>
-                  <section class="activity_content_section">
+          <section class="activity_content_section">
 
             <p> 2020년 7월에 시작한 블로그로 <br>
-                현재 꾸준하게 운영중인 기술 블로그입니다. <br>
+              현재 꾸준하게 운영중인 기술 블로그입니다. <br>
             </p>
 
             <p>
-                공부하면서 알게 된 내용들과 <br>
-                새로 접하는 기술 트랜드들을 정리하고 있습니다.
-          
+              공부하면서 알게 된 내용들과 <br>
+              새로 접하는 기술 트랜드들을 정리하고 있습니다.
+
             </p>
 
             <p class="activity_link">
 
-            
-               <a href = "https://aosjehdgus.tistory.com/" target ="_blank" class="activity_link">
-               <img src="img/tistory_logo.png"> &nbsp dongle's tech link</a>
-              
+
+              <a href="https://aosjehdgus.tistory.com/" target="_blank" class="activity_link">
+                <img src="img/tistory_logo.png"> &nbsp dongle's tech link</a>
+
             </p>
 
 
@@ -399,26 +435,26 @@
 
           <section class="activity_content_section">
 
-              <p> 2020년 12월에 시작한 부계정으로 <br>
-                현재 꾸준하게 포스팅중 입니다. <br>
+            <p> 2020년 12월에 시작한 부계정으로 <br>
+              현재 꾸준하게 포스팅중 입니다. <br>
             </p>
 
             <p>
-                학습하는 모든 사항들에 대해서 <br>
-                요약 정리하고 기록해두고 있습니다.
-          
+              학습하는 모든 사항들에 대해서 <br>
+              요약 정리하고 기록해두고 있습니다.
+
             </p>
 
             <p>
 
-               <a href = "https://instagram.com/dongle__study" target ="_blank" class="activity_link">
+              <a href="https://instagram.com/dongle__study" target="_blank" class="activity_link">
                 <img src="img/insta_logo.png"> &nbsp dongle_study link</a>
-              
+
             </p>
 
           </section>
 
-          
+
 
         </article>
 
@@ -436,7 +472,11 @@
         </header>
 
 
+
       </section>
+
+
+
 
 
       <!--Start of chart.js Script-->
