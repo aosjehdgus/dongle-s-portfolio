@@ -171,7 +171,6 @@ border-radius: 3px;
 
 /* Style the tab content */
 
-
 .tabcontent {
 display: none;
 padding: 6px 12px;
@@ -179,14 +178,12 @@ height : 580px;
 
 }
 
-
 #side_img{
 
   width:230px;
   border-radius: 10%;
 
 }
-
 
 .profile_section {
 
@@ -196,7 +193,6 @@ height : 580px;
   border-radius: 30px;
   background-color: white;
 
-
 }
 
 .profile_sub_title_section {
@@ -205,7 +201,6 @@ height : 580px;
     padding-left: 20px;
 
 }
-
 
 .sub_title {
 
@@ -292,9 +287,7 @@ height : 580px;
   grid : repeat(6, 1fr) / 1fr 2fr;
   align-items: center;
   height: 480px;
-  
-
-  
+    
 }
 
 .profile_content_section h5{
@@ -400,8 +393,6 @@ height : 580px;
   width: 140px;
   height: 80px;
 
-
-
 }
 
 .project_img_section{
@@ -423,9 +414,10 @@ height : 580px;
 
 .project_content_section h4{
 
-  font-size: 17px;
+  font-size: 16px;
   color: #505254;
   font-weight: 700;
+  
 
 }
 
@@ -436,7 +428,79 @@ height : 580px;
   font-weight: 500;
   line-height: 250%;
   
+}
+
+.activity_article_section{
+
+  display:grid;
+  grid: 1fr 2fr / repeat(3, 1fr);
+  gap: 20px 20px;
+  justify-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border:1px rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  height: 550px;
+  padding-top: 20px;
+  
+}
+.activity_img_section{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
+
+.activity_title{
+  
+  font-size: 16px;
+  color: #5c5e5f;
+  text-align: center;
+  line-height: 150%;
+}
+
+.activity_article_section img{
+
+  width: auto;
+  height : 190px;
+  
+}
+
+.activity_content_section p{
+
+  font-size: 15px;
+  color: #5c5e5f;
+  font-weight: 500;
+  line-height: 250%;
+  
+}
+
+.activity_content_section p a{
+
+  font-size: 15px;
+  color: #2a2b2c;
+  font-weight: 800;
+  cursor: pointer;
+  text-align: center;
+    
+}
+
+
+.activity_content_section p a img{
+
+  width: 20px;  
+  height: 20px;
+  
+}
+
+
+.activity_link{
+
+  display:flex;
+  align-items: center;
+
+
+}
+
 
 
