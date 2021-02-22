@@ -6,7 +6,7 @@ function button_click(num) {
 }
 
 function showSlide(num) {
-  const slides = document.querySelectorAll(".slide");
+  const slides = document.querySelectorAll(".project_slide");
   if (num > slides.length) {
     currSlide = 1;
   }

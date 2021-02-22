@@ -299,6 +299,8 @@ nav ul li a:hover {
 
 }
 
+
+
 .competency_article_section {
 
   display: grid;
@@ -421,7 +423,7 @@ nav ul li a:hover {
 
 }
 
-.slider {
+.project_slider {
 
 
   position: relative;
@@ -429,7 +431,7 @@ nav ul li a:hover {
 
 }
 
-.slide {
+.project_slide {
 
   height: 550px;
   background-size: cover;
