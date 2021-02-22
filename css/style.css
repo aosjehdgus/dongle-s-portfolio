@@ -457,7 +457,7 @@ nav ul li a:hover {
 
 
 
-.skill_section {
+/* .skill_section {
 
   display: flex;
   align-items: center;
@@ -466,7 +466,113 @@ nav ul li a:hover {
   border-radius: 5px;
   height: 550px;
 
+} */
+
+
+
+.skill_section {
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  height: 550px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
 }
+
+.skill_bar_section{
+
+  width: 550px;
+  height: auto;
+   
+}
+
+.bar {
+  background: #B5C7D3;
+  width: 0;
+  margin-bottom: 15px;
+  color: #fff;
+  position: relative;
+  transition: width 2s, background 0.2s;
+  -webkit-transform: translate3d(0, 0, 0);
+  clear: both;
+  height: 70px;
+
+}
+.bar:nth-of-type(2n) {
+  background: #658DC6;
+}
+.bar .label {
+  font-size: 1em;
+  padding: 1em;
+  background: #3d3d3d;
+  width: 8em;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  height: 38px;
+  align-items: center;
+  
+}
+.bar .label.light {
+  background: #575757;
+}
+
+.count {
+
+  display: flex;
+  height: 38px;
+  position: absolute;
+  right: 0.25em;
+  top: 0.75em;
+  padding: 0.15em;
+  font-size: 1em;
+  font-weight: bold;
+  align-items: center;
+  
+
+}
+
+.skill_content_section{
+
+  width: 550px;
+  height: 425px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+}
+
+.skill_img_section{
+
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 20px;
+
+}
+
+.skill_img_section img{
+
+  height:80px;
+  margin: 0 20px 0px 20px;
+}
+
+.skill_detail_section{
+
+  line-height: 2.2em;
+  font-size: 16px;
+  font-weight: 400;
+  width: 460px;
+  color: #505254;
+
+}
+
 
 
 .project_article_section {
