@@ -482,8 +482,8 @@ nav ul li a:hover {
 .activity_article_section {
 
   display: grid;
-  grid: 1fr 2fr / repeat(3, 1fr);
-  gap: 20px 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   justify-items: center;
   background-color: rgba(255, 255, 255, 0.4);
   border: 1px rgba(255, 255, 255, 0.4);
@@ -493,13 +493,6 @@ nav ul li a:hover {
 
 }
 
-.activity_img_section {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
 
 .activity_title {
 
@@ -509,11 +502,42 @@ nav ul li a:hover {
   line-height: 150%;
 }
 
-.activity_article_section img {
 
-  width: auto;
-  height: 190px;
+.activity_img_section{
 
+  display: flex;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  justify-content: center;
+
+}
+
+.activity_img_section img {
+
+  height:300px;
+
+}
+
+.activity_section:hover .activity_img_section {
+  opacity: 0.1;
+}
+
+.activity_content_section {
+
+  transition: .5s ease;
+  position : absolute;
+  opacity: 0;
+  transform: translate(-5%, -110%);
+ 
+}
+
+.activity_section:hover .activity_content_section {
+
+  opacity: 1;
+ 
 }
 
 .activity_content_section p {
@@ -522,8 +546,9 @@ nav ul li a:hover {
   color: #5c5e5f;
   font-weight: 500;
   line-height: 250%;
-
+   
 }
+
 
 .activity_content_section p a {
 
