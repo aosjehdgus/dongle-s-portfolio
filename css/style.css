@@ -51,10 +51,8 @@ nav.nav_grid {
 nav ul {
 
   display: grid;
-  grid-template-columns: 1fr repeat(2, fit-content(50px));
-  grid-gap: 30px;
-
-
+  grid-template-columns: 1fr fit-content(100px);
+  
 }
 
 nav ul li a#main-title {
@@ -99,17 +97,6 @@ nav ul li a:hover {
 
 }
 
-#login_btn {
-  border-radius: 3px;
-  border: none;
-  height: 32px;
-  font-size: 17px;
-  font-weight: 700;
-  background-color: #658DC6;
-  color: white;
-  width: 100px;
-  cursor: pointer;
-}
 
 
 /*
@@ -245,7 +232,7 @@ nav ul li a:hover {
 .profile_introduce_section {
 
   display: grid;
-  grid-template-rows: 1.2fr repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   align-items: center;
 
   height: 490px;

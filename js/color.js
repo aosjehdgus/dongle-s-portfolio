@@ -37,22 +37,9 @@ var btn ={
     document.querySelector('#night_day_btn').style.backgroundColor = color;
   },
 
-  LoginSetBackgroundColor : function(color){
-    document.querySelector('#login_btn').style.backgroundColor = color;
-  },
-
   NightDaySetColor : function(color){
     document.querySelector('#night_day_btn').style.color = color;
-  },
-
-  LogInSetColor : function(color){
-    document.querySelector('#login_btn').style.color = color;
-  },
-
-  LogInBorderSetColor : function(color){
-    document.querySelector('#login_btn').style.borderColor = color;
   }
-
 
 }
 
@@ -73,11 +60,7 @@ function nightdayhandler(self){
       Body.SetColor('white');
 
       btn.NightDaySetBackgroundColor('white');
-      btn.LoginSetBackgroundColor('#004680');
       btn.NightDaySetColor('#282C34');
-      btn.LogInSetColor('white');
-      btn.LogInBorderSetColor('#004680');
-
       nav.NavGridSetBackgroundColor("#161B22");
 
       
@@ -94,16 +77,9 @@ function nightdayhandler(self){
 
       Body.SetColor('black');
       Body.SetBackgroundColor('#F4F4F4');
-
       btn.NightDaySetBackgroundColor('#282C34');
-      btn.LoginSetBackgroundColor('#6587C6');
       btn.NightDaySetColor('white');
-      btn.LogInSetColor('white');
-      btn.LogInBorderSetColor('#6587C6');
-
       nav.NavGridSetBackgroundColor('#b5c7d3');
-
-
 
       self.value = 'night';
 
