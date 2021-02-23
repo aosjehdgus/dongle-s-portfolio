@@ -473,13 +473,29 @@ nav ul li a:hover {
 .skill_section {
   
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template: 1.5fr 2fr / repeat(2, 1fr);
   align-items: center;
   justify-items: center;
   height: 550px;
   background-color: rgba(255, 255, 255, 0.4);
   border: 1px rgba(255, 255, 255, 0.4);
   border-radius: 5px;
+}
+
+.skill_sub_title_section h3{
+
+  display: inline-flex;
+  align-items : center;
+  justify-content: center;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color : white;
+  margin: 0;
+  background-color: #A58D7F;
+  width: 320px;
+  height: 62px;
+  border-radius: 10px;
+ 
 }
 
 .skill_bar_section{
@@ -489,14 +505,52 @@ nav ul li a:hover {
    
 }
 
-.skill_bar_section h3{
+.skill_btn_section{
 
-  text-transform: capitalize;
-  color : #505254;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #A58D7F;
+  width: 320px;
+  height: 62px;
+  border-radius: 10px;
+
 }
+
+.cta-button {
+
+  display: inline-flex;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 20px 40px;
+  background-color:  #A58D7F;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.05);
+  animation: shadow-pulse 1s infinite;
+  cursor:pointer;
+  height: 45px;
+}
+
+@keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+     }
+     100% {
+          box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+     }
+}
+
+.cta-button:focus {
+  outline:none;
+}
+
+
+
 
 .bar {
   background: #B5C7D3;
@@ -508,6 +562,9 @@ nav ul li a:hover {
   -webkit-transform: translate3d(0, 0, 0);
   clear: both;
   height: 65px;
+  
+  border-radius: 5px;
+
 
 }
 .bar:nth-of-type(2n) {
@@ -517,13 +574,15 @@ nav ul li a:hover {
   font-size: 1em;
   padding: 1em;
   background: #3d3d3d;
-  width: 8em;
+  width: 5em;
   display: flex;
   position: relative;
   z-index: 2;
   font-weight: bold;
-  height: 33px;
+  height: 30px;
   align-items: center;
+  border: 1px solid #3d3d3d;
+  border-radius: 3px;
   
 }
 .bar .label.light {
@@ -548,7 +607,6 @@ nav ul li a:hover {
 .skill_content_section{
 
   width: 550px;
-  height: 400px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -562,7 +620,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-top : 20px;
+  margin-top : 5px;
   margin-bottom: 20px;
 
 }
