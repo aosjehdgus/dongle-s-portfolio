@@ -53,7 +53,8 @@ nav.nav_grid {
 nav ul {
 
   display: grid;
-  grid-template-columns: 1fr fit-content(100px);
+  grid-template-columns: 1fr repeat(2, fit-content(150px));
+  gap: 20px;
   
 }
 
@@ -85,6 +86,21 @@ nav ul li a:hover {
 }
 
 /*search & toggle & login */
+
+.start_btn{
+
+  border-radius: 3px;
+  border: none;
+  height: 32px;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #A58D7F;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+
+}
+
 
 #night_day_btn {
   border-radius: 3px;
