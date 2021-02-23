@@ -489,6 +489,15 @@ nav ul li a:hover {
    
 }
 
+.skill_bar_section h3{
+
+  text-transform: capitalize;
+  color : #505254;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 22px;
+}
+
 .bar {
   background: #B5C7D3;
   width: 0;
@@ -498,7 +507,7 @@ nav ul li a:hover {
   transition: width 2s, background 0.2s;
   -webkit-transform: translate3d(0, 0, 0);
   clear: both;
-  height: 70px;
+  height: 65px;
 
 }
 .bar:nth-of-type(2n) {
@@ -513,7 +522,7 @@ nav ul li a:hover {
   position: relative;
   z-index: 2;
   font-weight: bold;
-  height: 38px;
+  height: 33px;
   align-items: center;
   
 }
@@ -539,7 +548,7 @@ nav ul li a:hover {
 .skill_content_section{
 
   width: 550px;
-  height: 425px;
+  height: 400px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -553,6 +562,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-top : 20px;
   margin-bottom: 20px;
 
 }
