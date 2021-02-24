@@ -993,7 +993,7 @@ nav ul li a:hover {
   width: 110px;
   height: 110px;
   transform-style: preserve-3d;
-  animation: animate 7s linear infinite;
+  animation: animate 17s linear infinite;
 }
 
 @keyframes animate{
