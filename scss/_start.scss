@@ -1,0 +1,91 @@
+
+$start-color: #A58D7F;
+
+
+.main_section{
+
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    height: 700px;
+  
+  
+  
+  }
+  
+  .main_title_section{
+  
+  
+    display: flex;
+    align-items: flex-end;
+  
+  }
+  
+  
+  
+  .start_title {
+    position: relative;
+    font-weight: 900;
+    font-size: 4.25em;
+
+        .text-wrapper{
+
+            position: relative;
+            display: flex;
+            
+            overflow: hidden;
+            align-items: center;
+
+        }
+
+        .letter {
+            display: inline-block;
+            line-height: 1em;
+            color: #595959;
+        }
+
+  }
+  
+ 
+  
+ 
+  
+  .start_home_btn_section{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $start-color;
+    width: 340px;
+    height: 75px;
+    border-radius: 12px;
+  
+  
+  }
+  
+  /*로그인 login & home btn */
+  
+  .start_home_btn {
+
+    font:{
+        size: 23px;
+        weight:bold;
+    }
+
+    border:{
+
+        radius: 12px;
+        style: hidden;
+
+    }
+      width: 320px;
+      height: 55px;
+      color: #f6f0fc;
+      background-color: $start-color;
+      box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+      animation: shadow-pulse 1s infinite;
+      cursor: pointer;
+      
+  }
+  
+  
